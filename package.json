@@ -34,5 +34,9 @@
   "dependencies": {
     "@builderbot-plugins/free-gpt": "0.0.8-alpha.0",
     "@langchain/core": "^0.1.40"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
+  
 }
