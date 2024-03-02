@@ -1,0 +1,38 @@
+{
+  "name": "@builderbot-plugins/flow-routing",
+  "version": "1.0.0",
+  "description": "This is a routing to flows for the library @bot-whatsapp",
+  "keywords": [],
+  "author": "Elimeleth Capuano <elimelethcapuano@gmail.com>",
+  "license": "ISC",
+  "main": "dist/index.cjs",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elimeleth/flow-routing.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf dist && rollup --config"
+  },
+  "bugs": {
+    "url": "https://github.com/Elimeleth/flow-routing.git/issues"
+  },
+  "homepage": "https://github.com/Elimeleth/flow-routing.git#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "rollup-plugin-typescript2": "0.36.0",
+    "tsm": "2.3.0",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@builderbot-plugins/free-gpt": "0.0.8-alpha.0",
+    "@langchain/core": "^0.1.40"
+  }
+}
