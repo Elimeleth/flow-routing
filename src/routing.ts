@@ -33,15 +33,12 @@ export default class FlowRouting {
             question
         })
         
-        return this.findEmployee(agent_name)?.flow
+        return this.findEmployee(agent_name)
     }
 
     private findEmployee(name: string){
-        const indexEmployee = this.agents.findIndex(
-            (agent) => agent.name === name.replace(/\W+/gim, '').trim()
-          );
-          
-        return this.agents[indexEmployee];
+        return this.agents.find(
+            agent => agent.name === name.replace(/\W+/gim, '').trim());
     }
 
 }
